@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 /**
  * Cliente SiCA (Sistema de Compartilhamento de Arquivos)
- * * Esta classe representa a aplicação cliente que interage com o servidor
- * SiCA.
+ * Esta classe representa a aplicação cliente que interage com o servidor SiCA.
  * Ela oferece uma interface de linha de comando para que o usuário possa
  * listar, fazer upload e download de arquivos. A comunicação é feita via
  * sockets TCP.
@@ -30,7 +29,7 @@ public class ClienteSiCA {
 
           switch (escolha) {
             case 1:
-              comando = "LIST";
+              comando = "LISTAR";
               break;
             case 2:
               System.out.println("Digite o nome do arquivo para UPLOAD:");
@@ -56,7 +55,7 @@ public class ClienteSiCA {
           String operacao = partesComando[0].toUpperCase();
 
           switch (operacao) {
-            case "LIST":
+            case "LISTAR":
               executarComandoListar(entrada);
               break;
             case "UPLOAD":
@@ -93,7 +92,7 @@ public class ClienteSiCA {
   }
 
   /**
-   * Lida com a resposta do comando LIST do servidor.
+   * Lida com a resposta do comando LISTAR do servidor.
    *
    * @param entrada O BufferedReader para ler a resposta.
    * @throws IOException Se ocorrer um erro de E/S.

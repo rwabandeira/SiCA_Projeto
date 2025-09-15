@@ -1,7 +1,6 @@
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.file.Files;
 
 /**
  * Servidor SiCA (Sistema de Compartilhamento de Arquivos)
@@ -92,14 +91,14 @@ public class ServidorSiCA {
     File diretorio = new File(DIRETORIO_ARQUIVOS);
     File[] arquivos = diretorio.listFiles();
 
-    StringBuilder listaArquivos = new StringBuilder();
+    StringBuilder listarArquivos = new StringBuilder();
     if (arquivos != null && arquivos.length > 0) {
       for (File arquivo : arquivos) {
         if (arquivo.isFile()) {
-          listaArquivos.append(arquivo.getName()).append("\n");
+          listarArquivos.append(arquivo.getName()).append("\n");
         }
       }
-      saida.println(listaArquivos.toString());
+      saida.println(listarArquivos.toString());
     } else {
       saida.println("Nenhum arquivo encontrado no servidor.");
     }
