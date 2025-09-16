@@ -1,0 +1,18 @@
+# Título do Documento
+
+## Seção 1: Introdução
+Bem-vindo a este arquivo de texto de exemplo. O formato TXT é usado para texto simples, sem formatação especial, como negrito ou itálico [8].
+
+### Item 1.1
+*   Ponto um.
+*   Ponto dois.
+
+## Seção 2: Instruções
+Você pode usar CAPS para dar ênfase a palavras ou frases importantes [5].
+
+Por exemplo: ESTE É UM TEXTO IMPORTANTE.
+
+## Seção 3: Conclusão
+Este é um exemplo básico de um arquivo TXT. É útil para notas rápidas, listas de ingredientes ou para salvar informações sem formatação complexa [5].
+
+Fim do texto de exemplo.
